@@ -1,32 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139433603-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "UA-139433603-1");
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
   <title>Taft Technology</title>
-  <meta name="description" content="Great night vision options to let you see in the dark">
-  
-
+  <meta name="description" content="Great night vision options to let you see in the dark" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<body bgcolor = "#FFFFFF">
-	   <tr>
-            <td colspan = "2" bgcolor = "#FFFFFF">
-			<center>
-               <h1>Night vision allows the adventure to continue after the sun goes down.</h1>
-			</center>
-            </td>
-         </tr>
-      <table style="font-size:18px;" width = "100%" border = "0">
-         
-	<p>This past Christmas 2021, my 9 year old son got a night vision monocular from my parents as a Christmas gift. Since he has gotten it, we have gone 
-		out multiple nights at the local state park hoping to see wildlife or even Bigfoot. Unfortunately we have yet to see Bigfoot, but we have had the pleasure
-		to see other animals. We have spotted quite a few deer, a field mouse and tried hiding ourselves to see if it worked. My son's night vison has video record functionality and he was actually able to 
-		capture the field mouse on video. You can see the mouse run, go behind a log and then its eyes reappear. In my opinion, night vision is great to have 
-		as not only a way to see what is out after dark, but also will help you create great memories along the way.</P>
-         
-      </table>
-   </body>
+<body>
+  <div class="container">
+    <!--<div class="row">-->
+    <div class="topnav" id="myTopnav">
+      <!--<div class="navname">Taft Technology</div>-->
+      <div class="sitelinks">
+        <a href="index.html" class="navname">Taft Technology</a>
+        <a href="nightVision.html" class="navlink">Night Vision</a>
+        <a href="#contact" class="navlink">Contact</a>
+        <a href="#about" class="navlink">About</a>
+      </div>
+      <!--<div class="dropdown">
+              <button class="dropbtn">Dropdown
+                  <i class="fa fa-caret-down"></i>
+              </button>
+    	<div class="dropdown-content">
+      		<a href="#">Link 1</a>
+      		<a href="#">Link 2</a>
+      		<a href="#">Link 3</a>
+    	</div>
+    </div>-->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <div class="row">
+      <div class="header">
+        <h1>
+          Night vision allows the adventure to continue after the sun goes
+          down.
+        </h1>
+      </div>
+
+      <p>
+        This past Christmas 2021, my 9 year old son got a night vision
+        monocular from my parents as a Christmas gift. Since he has gotten it,
+        we have gone out multiple nights at the local state park hoping to see
+        wildlife or even Bigfoot. Unfortunately we have yet to see Bigfoot,
+        but we have had the pleasure to see other animals. We have spotted
+        quite a few deer, a field mouse and tried hiding ourselves to see if
+        it worked. My son's night vison has video record functionality and he
+        was actually able to capture the field mouse on video. You can see the
+        mouse run, go behind a log and then its eyes reappear. In my opinion,
+        night vision is great to have as not only a way to see what is out
+        after dark, but also will help you create great memories along the
+        way.
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
